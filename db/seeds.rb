@@ -12,6 +12,11 @@
                  )
 end
 
+Product.create!(name: 'Local Product',
+                cost: 1.00,
+                country: 'United States'
+               )
+
 250.times do |index|
   Review.create!(author: Faker::RickAndMorty.character,
                  content_body: Faker::Internet.user_name(51...249),

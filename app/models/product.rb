@@ -12,4 +12,7 @@ class Product < ActiveRecord::Base
     .limit(1)
     )}
 
+  scope :three_most_recent, -> { order(created_at: :desc).limit(3) }
+
+  scope :local, -> { where(country: 'United States') }
 end

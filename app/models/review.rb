@@ -7,5 +7,4 @@ class Review < ActiveRecord::Base
   validates :rating, :numericality => {:only_integer => true}
   validates_inclusion_of :rating, :in => 1..5
   validates :product_id, :presence => true
-
 end

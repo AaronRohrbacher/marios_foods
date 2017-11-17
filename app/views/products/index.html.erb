@@ -3,6 +3,21 @@
 <h2>Most reviewed:</h2>
 <%= @products.most_reviews[0].name %>
 
+<h2>3 most recent:</h2>
+<ul>
+<% @products.three_most_recent.each do |product| %>
+  <li><%= link_to product.name, product_path(product) %></li>
+<% end %>
+</ul>
+
+<h2> USA: </h2>
+  <ul>
+  <% @products.local.each do |product| %>
+    <li><%= link_to product.name, product_path(product) %></li>
+  <% end %>
+  </ul>
+
+
 <ul>
   <% @products.each do |product| %>
     <li><%= link_to product.name, product_path(product) %></li>
