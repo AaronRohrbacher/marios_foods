@@ -3,7 +3,9 @@
 <h1>Products</h1>
 <p><%= link_to "New Product", new_product_path %></p>
 <h2>Most reviewed:</h2>
+<% if @products.most_reviews[0] %>
 <%= @products.most_reviews[0].name %>
+<% end %>
 <hr>
 <h2>Newest additions:</h2>
 <ul>
