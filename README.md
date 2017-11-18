@@ -2,7 +2,7 @@
 
 * This app will allow Mario's Foods to create, edit, and delete products, and reviews of said products.
 
-* _This application requires Postgres. Be sure that Postgres is installed before trying to run this application. If not installed, see:_ (postgresql.org)
+* _This application requires Postgres. Be sure that Postgres is installed before trying to run this application. If not installed, see:_ url(postgresql.org)
 
 ##To run:
 * clone this repository, open your terminal window, and navigate to the root directory of this project.
