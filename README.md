@@ -11,7 +11,7 @@ In the terminal window, run:
 * `$ postgres` (this is the SQL server... very necessary.)
 * Open a new terminal window or tab.
 * run `$ bundle install && rake db:create && rake:db:seed && rails s`
-* In your favorite web browser, visit [localhost:3000](localhost:3000)
+* In your favorite web browser, visit [localhost:3000](http://localhost:3000)
 * Have fun!
 
 ## Technologies Used:
