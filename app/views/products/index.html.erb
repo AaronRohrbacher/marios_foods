@@ -1,23 +1,27 @@
-<h1>Products</h1>
+<% content_for(:title, "Products") %>
 
+<h1>Products</h1>
+<p><%= link_to "New Product", new_product_path %></p>
 <h2>Most reviewed:</h2>
 <%= @products.most_reviews[0].name %>
-
-<h2>3 most recent:</h2>
+<hr>
+<h2>Newest additions:</h2>
 <ul>
 <% @products.three_most_recent.each do |product| %>
   <li><%= link_to product.name, product_path(product) %></li>
 <% end %>
 </ul>
+<hr>
 
-<h2> USA: </h2>
+<h2> Products made in the US: </h2>
   <ul>
   <% @products.local.each do |product| %>
     <li><%= link_to product.name, product_path(product) %></li>
   <% end %>
   </ul>
+  <hr>
 
-
+<h2>All Products:</h2>
 <ul>
   <% @products.each do |product| %>
     <li><%= link_to product.name, product_path(product) %></li>
@@ -25,5 +29,3 @@
 </ul>
 
 <hr>
-
-<%= link_to "New Product", new_product_path %>

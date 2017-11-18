@@ -1,5 +1,11 @@
-<% content_for(:title, "Product | To Do") %>
+<% content_for(:title, "#{@product.name} Details") %>
 <h1><%= @product.name %></h1>
+<h2><%= number_to_currency(@product.cost) %></h2>
+<p><%= link_to "Add a review", new_product_review_path(@product) %> |
+<%= link_to "Edit Product", edit_product_path(@product) %> |
+<%= link_to "Delete Product", product_path(@product),
+                        :data => {:confirm => "Are you sure?",
+                                       :method => "delete"} %>
 
 <% if @product.reviews.any? %>
   <h4>Here are the reviews for this product:</h4>
@@ -17,11 +23,3 @@
 <% else %>
   <p>There are no reviews yet!</p>
 <% end %>
-
-<p><%= link_to "Add a review", new_product_review_path(@product) %></p>
-<p><%= link_to "Edit Product", edit_product_path(@product) %></p>
-<p><%= link_to "Delete Product", product_path(@product),
-                        :data => {:confirm => "Are you sure?",
-                                       :method => "delete"} %></p>
-
-<p><%= link_to "Return to products", products_path %></p>
