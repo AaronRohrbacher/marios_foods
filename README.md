@@ -1,24 +1,21 @@
-# README
+### Welcome to Mario's Foods
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* This app will allow Mario's Foods to create, edit, and delete products, and reviews of said products.
 
-Things you may want to cover:
+* _This application requires Postgres. Be sure that Postgres is installed before trying to run this application. If not installed, see: url(postgresql.org)_
 
-* Ruby version
+##To run:
+* clone this repository, open your terminal window, and navigate to the root directory of this project.
 
-* System dependencies
+In the terminal window, run:
+* `$ postgres` (this is the SQL server... very necessary.)
+* Open a new terminal window or tab.
+* run `$ bundle install && rake db:create && rake:db:seed && rails s`
+* In your favorite web browser, visit url(localhost:3000)
+* Have fun!
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Technologies Used:
+* Built with Ruby 2.4.1p111 on Rails 5.1.4
+* Tested with Rspec and Capybara
+* Seeded with Faker
+* Styled with Bootstrap
