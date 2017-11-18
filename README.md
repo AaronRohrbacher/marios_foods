@@ -4,7 +4,7 @@
 
 * _This application requires Postgres. Be sure that Postgres is installed before trying to run this application. If not installed, see: [postgresql.org](http://postgresql.org)_
 
-##To run:
+## To run:
 * clone this repository, open your terminal window, and navigate to the root directory of this project.
 
 In the terminal window, run:
